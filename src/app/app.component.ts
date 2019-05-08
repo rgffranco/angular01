@@ -4,7 +4,23 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
-})
+})//Component
+
 export class AppComponent {
-  title = 'angular01';
-}
+
+  data = {
+    titleServicos:'bgServicos',
+    titleFacilities:'bgFacilities'
+  }//data
+
+  quandoClicado(){
+    alert('Olá mundo');
+  }//quandoClicado
+
+  aoLevantar(novoTitulo:string){
+    this.data.titleServicos = novoTitulo;
+  }//aoLevantar
+
+
+
+}//export
